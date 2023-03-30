@@ -13,7 +13,7 @@ export class HomeComponentActor extends ActorBase {
     const file = el.files[0];
     console.log(file);
     const reader = new FileReader();
-    const chunkSize = 1024 * 16;
+    const chunkSize = 1024 * 32;
     const fileChunksSize = Math.ceil(file.size / chunkSize);
     let sequenceNum = 0;
     let offset = 0;
